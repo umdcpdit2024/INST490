@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UMD DIT Website - Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e6e6e6;
+        }
+
+        .umdbar h3 {
+            background-color: #e21833;
+            color: white;
+            padding: 10px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+            background-color: white;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: #e21833;
+        }
+
+        .drive-iframe {
+            display: none;
+            width: 100%;
+            height: calc(100% - 50px - 288px);
+            position: absolute;
+            top: 148px;
+            left: 0;
+        }
+
+        .folder-links {
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        .folder-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: #e6e6e6;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .folder-links a:hover {
+            background-color: white;
+            color: #e21833;
+        }
+    </style>
+    <script>
+        function openFolder(folderId) {
+            var iframe = document.querySelector('.drive-iframe');
+            iframe.style.display = 'block';
+            iframe.src = "https://drive.google.com/embeddedfolderview?id=" + folderId + "#list";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="umdbar">
+        <h3>University of Maryland</h3>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Home Page</a>
+        <a href="General_Calendar_2.html">General Calendar</a>
+        <a href="Documentation_2.html">Documentation</a>
+        <a href="Schedule_Maintenance_2.html">Schedule Maintenance</a>
+        <a href="Upload_2.html">Upload Page</a>
+    </div>
+
+    <div class="folder-links">
+        <a href="javascript:void(0)" onclick="openFolder('1i3a-ZZKfkQAakcFgA1c_Xxugx578NXEk')">Access</a>
+        <a href="javascript:void(0)" onclick="openFolder('1pS19yHgn3-G0miJwIyH4kdGsuno4B667')">Aggregation</a>
+        <a href="javascript:void(0)" onclick="openFolder('1yIRG7vljjd2PZPlbkUYdQ1pZvGo6rzWE')">Border</a>
+        <a href="javascript:void(0)" onclick="openFolder('1ux1OJdyap8nehRbFM-wwv50KhwnxD8za')">Core</a>
+        <a href="javascript:void(0)" onclick="openFolder('1SC8seBY8gCR9Z5uBWzaopGHIUArGbMSD')">Data Center</a>
+        <a href="javascript:void(0)" onclick="openFolder('1bnCj3ePnrDXxTCXz7CohtKtVANwnzx2J')">Net Services</a>
+        <a href="javascript:void(0)" onclick="openFolder('14PnkqcVEfV6jq4laT4EBB-ba79nJbCtL')">Voice</a>
+        <a href="javascript:void(0)" onclick="openFolder('1gbJMsIFdPD-q1l6Jy0Zy9Ih18mXyYHFs')">Wireless</a>
+        <a href="javascript:void(0)" onclick="openFolder('1N_-2Z-gKzyoMhWFFoEQuLTMehQqWD3gm')">Recent Uploads</a>
+        <a href="javascript:void(0)" onclick="openFolder('1v7DjGmOlB4aurz79JWH6-JUbvA9CgGV4')">Test Templates</a>
+    </div>
+
+    <iframe class="drive-iframe" src="" frameborder="0" scrolling="no"></iframe>
+
+</body>
+
+</html>
